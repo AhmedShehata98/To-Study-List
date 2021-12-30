@@ -56,7 +56,7 @@
 /* end Global Ruls */
 
 body.mainColorActive{
-  --alt-clr: linear-gradient(210deg , #07031A ,#101010 ,#202020);;
+  --alt-clr: linear-gradient(80deg , #2C272E ,#252525 ,#112031);
   --main-tx-clr:#fff;
   
 }
@@ -104,6 +104,7 @@ header.navbar .toggle {
   color: #fff;
   cursor: pointer;
   padding: 0 8px;
+  user-select: none;
   transition: opacity 0.3s ease-out;
 }
 header.navbar .toggle:hover{
@@ -128,7 +129,7 @@ header.navbar .appearance {
   border-radius: 5px;
 }
 header.navbar .appearance.active {
-  height: 300px;
+  height: fit-content;
   opacity: 1;
 }
 
@@ -401,9 +402,9 @@ main.todo .container .bar-container .progressbar {
   align-items: center;
   justify-content: space-between;
   gap: 5px;
-  padding: 10px 5px;
+  padding: 15px 10px;
   background: var(--main-clr);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 @media (max-width:768px) {
   .main-list .addtask {
